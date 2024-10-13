@@ -114,6 +114,7 @@ First test:
 6.e. On Move Studio, use the Tools menu on the left, and compile the package. Then deploy it to Testnet. Check to see if the list object was created when deploying. It will return a package id. Store the package id in your report file. Then test it. Call the “add”, “remove”, “delete”, and “length” functions are entry functions, so that they could be directly called. 
 
    ![Fig. 3. After the package deployment, check the created object for todo_list package on your Sui wallet.](images/6e%20-%20fig3.png)
+      
       Fig. 3. After the package deployment, check the created object for todo_list package on your Sui wallet.
 
 7. You can access your package in your wallet as well. Open Sui Wallet. Click “Activity” tab, and click the transaction you recently executed to deploy the package. Check the package id. Click “view on explorer” button. It will it on either Suivision (https://testnet.suivision.xyz/) or Suiscan (https://suiscan.xyz/testnet/home). Both these websites are Sui explorers. We prefer to use Suivision, but in case that doesn’t work, Suiscan is an alternative. 
