@@ -40,7 +40,7 @@ https://docs.sui.io/guides/developer/advanced/move-2024-migration#update-ide-sup
 
 6. Use Move Studio to develop, compile, and deploy Sui packages. 
 
-First test:
+First test:  
 6.a. Go to Move Studio: https://www.movestudio.dev/build  
 6.b. Link to Sui Wallet on the top-right corner.  
 6.c. Create a new project. Name it “todo_list”.   
@@ -49,19 +49,20 @@ First test:
 6.d.1. In the “Move.toml” file, make sure that the name in [package] and [addresses] match the project name, which is todo_list. Also, make sure that version = "0.0.1", edition="2024.beta" and rev = "testnet". 
 
     [package]
-    name = "todo_list"
-    version = "0.0.1"
-    edition="2024.beta"
+    name = <span style="background-color: yellow;">"todo_list"</span>
+    version = <span style="background-color: yellow;">"0.0.1"</span>
+    edition=<span style="background-color: yellow;">"2024.beta"</span>
     
     [dependencies]
-    Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "testnet" }
+    Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = <span style="background-color: yellow;">"testnet"</span> }
     
     [addresses]
-    todo_list = "0x0"
+    <span style="background-color: yellow;">todo_list</span> = "0x0"
 
 Code 1: Move.toml
 
-6.d.2. in the “sources” folder, create a file, name it “todo_list.move”, and paste the following code to that. This code has been taken from this link with some changes. 
+6.d.2. in the “sources” folder, create a file, name it “todo_list.move”, and paste the following code to that. This code has been taken from the link below with some changes.
+https://move-book.com/your-first-move/hello-sui.html 
 
     module todo_list::todo_list {
        use std::string::String;
