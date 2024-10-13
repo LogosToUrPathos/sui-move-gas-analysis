@@ -49,15 +49,17 @@ First test:
 6.d.1. In the “Move.toml” file, make sure that the name in [package] and [addresses] match the project name, which is todo_list. Also, make sure that version = "0.0.1", edition="2024.beta" and rev = "testnet". 
 
     [package]
-    name = <span style="background-color: yellow;">"todo_list"</span>
-    version = <span style="background-color: yellow;">"0.0.1"</span>
-    edition=<span style="background-color: yellow;">"2024.beta"</span>
+    name = "todo_list"
+    version = "0.0.1"
+    edition= "2024.beta"
     
     [dependencies]
-    Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = <span style="background-color: yellow;">"testnet"</span> }
+    Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "testnet" }
     
     [addresses]
-    <span style="background-color: yellow;">todo_list</span> = "0x0"
+    todo_list = "0x0"
+
+![Code 1: Move.toml](images/code1.png)
 
 Code 1: Move.toml
 
