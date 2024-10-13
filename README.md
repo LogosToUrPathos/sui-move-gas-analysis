@@ -23,12 +23,12 @@ $ sui client faucet
 
 4.b. You can also directly request tokens in your Sui wallet. In the Sui Wallet extension, go to the settings and click on “Request Testnet SUI Tokens.” This method has a cooldown of a few seconds. Note: This may not work all the time. 
 
-     ![Fig. 1. Request SUI Tokens at Sui wallet](images/4b%20-%20fig1.png)
+![Fig. 1. Request SUI Tokens at Sui wallet](images/4b%20-%20fig1.png)
     
     
 4.c. In the Sui Discord server (https://discord.gg/sui), go to the '#testnet-faucet' channel and type “!faucet” followed by your wallet address. This method has a cooldown of 2 hours. This may not work all the time. You may get a message that the faucet is over capacity. 
 
-    ![Fig. 2. Request Sui tokens on Discord](images/4c%20-%20fig2.png)
+![Fig 2. Request Sui tokens on Discord](images/4c%20-%20fig2.png)
 
 
 5. Optional: Install VSCode and its Move extension to develop Sui packages. 
