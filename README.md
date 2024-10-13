@@ -41,10 +41,11 @@ https://docs.sui.io/guides/developer/advanced/move-2024-migration#update-ide-sup
 6. Use Move Studio to develop, compile, and deploy Sui packages. 
 
 First test:
-6.a. Go to Move Studio: https://www.movestudio.dev/build
-6.b. Link to Sui Wallet on the top-right corner.
-6.c. Create a new project. Name it “todo_list”. 
-6.d. On the left “Files” menu, observe that the project has a “Move.toml” file and a “sources” folder.  
+6.a. Go to Move Studio: https://www.movestudio.dev/build  
+6.b. Link to Sui Wallet on the top-right corner.  
+6.c. Create a new project. Name it “todo_list”.   
+6.d. On the left “Files” menu, observe that the project has a “Move.toml” file and a “sources” folder.    
+
 6.d.1. In the “Move.toml” file, make sure that the name in [package] and [addresses] match the project name, which is todo_list. Also, make sure that version = "0.0.1", edition="2024.beta" and rev = "testnet". 
 
     [package]
