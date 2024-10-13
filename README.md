@@ -49,7 +49,7 @@ First test:
 6.d.1. In the “Move.toml” file, make sure that the name in [package] and [addresses] match the project name, which is todo_list. Also, make sure that version = "0.0.1", edition="2024.beta" and rev = "testnet". 
 
     [package]
-    name = **"todo_list"**
+    name = > **"todo_list"**
     version = "0.0.1"
     edition= "2024.beta"
     
