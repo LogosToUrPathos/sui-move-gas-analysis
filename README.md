@@ -19,7 +19,7 @@ A few options to get Sui tokens are given below.
 
 4.a. The easiest way to get Sui Tokens is running the following command on your terminal. It will transfer 1 SUI to your account in a few seconds. You can run this command several times and get many tokens. Check your Sui wallet that you have received the tokens. Note that you need to successfully complete the above steps 1 and 2 to be able to run this command. If you don’t want to use this command to get Sui tokens, steps 1 and 2 are not required. 
 
-$ sui client faucet
+    $ sui client faucet
 
 4.b. You can also directly request tokens in your Sui wallet. In the Sui Wallet extension, go to the settings and click on “Request Testnet SUI Tokens.” This method has a cooldown of a few seconds. Note: This may not work all the time. 
 
