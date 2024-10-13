@@ -1,4 +1,4 @@
-"# sui-move-gas-optimization" 
+# sui-move-gas-optimization
 
 Instructions to run the Sui packages in this GitHub repository
 
