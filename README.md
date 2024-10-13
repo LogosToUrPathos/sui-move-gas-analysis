@@ -60,56 +60,56 @@ First test:
 
 6.d.2. in the “sources” folder, create a file, name it “todo_list.move”, and paste the following code to that. This code has been taken from this link with some changes. 
 
-module todo_list::todo_list {
-   use std::string::String;
-
-   public struct TodoList has key, store {
-      id: UID,
-      items: vector<String>
-   }
-
-   /// Create a new todo list and transfer
-   fun init(ctx: &mut TxContext) {
-      transfer::transfer(TodoList {
-         id: object::new(ctx),
-         items: vector[]
-      }, ctx.sender());
-   }
-
-   /// Create a new todo list.
-   public fun new(ctx: &mut TxContext): TodoList {
-      let list = TodoList {
-      id: object::new(ctx),
-      items: vector[]
-      };
-
-       (list)
-   }
-
-   /// Add a new todo item to the list.
-   entry fun add(list: &mut TodoList, item: String) {
-      list.items.push_back(item);
-   }
-
-   /// Remove a todo item from the list by index.
-   entry fun remove(list: &mut TodoList, index: u64): String {
-      list.items.remove(index)
-   }
-
-   /// Delete the list and the capability to manage it.
-   entry fun delete(list: TodoList) {
-      let TodoList { id, items: _ } = list;
-      id.delete();
-   }
-
-   /// Get the number of items in the list.
-   entry fun length(list: &TodoList): u64 {
-      list.items.length()
-   }
-
-}
-
-Code 2: sources/todo_list.move
+    module todo_list::todo_list {
+       use std::string::String;
+    
+       public struct TodoList has key, store {
+          id: UID,
+          items: vector<String>
+       }
+    
+       /// Create a new todo list and transfer
+       fun init(ctx: &mut TxContext) {
+          transfer::transfer(TodoList {
+             id: object::new(ctx),
+             items: vector[]
+          }, ctx.sender());
+       }
+    
+       /// Create a new todo list.
+       public fun new(ctx: &mut TxContext): TodoList {
+          let list = TodoList {
+          id: object::new(ctx),
+          items: vector[]
+          };
+    
+           (list)
+       }
+    
+       /// Add a new todo item to the list.
+       entry fun add(list: &mut TodoList, item: String) {
+          list.items.push_back(item);
+       }
+    
+       /// Remove a todo item from the list by index.
+       entry fun remove(list: &mut TodoList, index: u64): String {
+          list.items.remove(index)
+       }
+    
+       /// Delete the list and the capability to manage it.
+       entry fun delete(list: TodoList) {
+          let TodoList { id, items: _ } = list;
+          id.delete();
+       }
+    
+       /// Get the number of items in the list.
+       entry fun length(list: &TodoList): u64 {
+          list.items.length()
+       }
+    
+    }
+    
+    Code 2: sources/todo_list.move
  
 6.e. On Move Studio, use the Tools menu on the left, and compile the package. Then deploy it to Testnet. Check to see if the list object was created when deploying. It will return a package id. Store the package id in your report file. Then test it. Call the “add”, “remove”, “delete”, and “length” functions are entry functions, so that they could be directly called. 
 
